@@ -1,121 +1,105 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: plum;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 4px solid #4CAF50; /* Green border around the entire container */
+        }
 
-    header h1 {
-      margin: 0;
-    }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 4px solid #FF5722; /* Orange border below the header */
+            padding-bottom: 10px;
+        }
 
-    section {
-      padding: 20px;
-      margin: 20px;
-    }
+        header img {
+            border-radius: 50%;
+            border: 5px solid #2196F3; /* Blue border around the image */
+        }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
+        .about, .skills, .contact {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #9C27B0; /* Purple border around each section */
+            border-radius: 8px;
+        }
 
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 300px;
-      margin: 10px;
-      padding: 15px;
-      text-align: center;
-    }
+        .about h2, .skills h2, .contact h2 {
+            margin-top: 0;
+            color: #333;
+        }
 
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-    .card h3 {
-      margin-top: 10px;
-      color: #333;
-    }
+        .skills li {
+            background-color: #f9f9f9;
+            margin: 5px 0;
+            padding: 8px;
+            border: 1px solid #FFC107; /* Yellow border for each skill item */
+            border-radius: 5px;
+        }
 
-    .card p {
-      color: #666;
-    }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
 
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-
-    .social-icons a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-
-    .social-icons a:hover {
-      color: #ff6347;
-    }
-  </style>
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>My Portfolio</h1>
-    
-  </header>
+    <div class="container">
+        <header>
+            <h1>Hi, I'm Atharv</h1>
+            <div align="center">
+                <img src="elonmusk.jpg" alt="image" style="height: 150px;">
+            </div>
+            <p>student | traveller | Learner</p>
+        </header>
+        
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Atharv, an engineering student. I enjoy visiting new places. I love coding, solving problems, and constantly learning new technologies.</p>
+        </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I am a web developer with a passion for creating beautiful and functional website.<br>
-    my self sejal Kadam and i am student of zeal college of engineering and research</p>
-  </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Teamwork</li>
+                <li>Leadership</li>
+                <li>Communication</li>
+                <li>Time management</li>
+            </ul>
+        </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="project">
-      <div class="project item">
-        <h3>Hobby</h3>
-        <p>My Branch is<b>Artificial intelligence and data science</b>I like coding and my other hobbies are<br>1]Drawing<br>2]Playing Basketball<br>3]Singing<br>4]Dancing.</p>
-      </div>
-      <div  class="card" >
-        <h3>sejj</h3>
-        <img src="sejj.jpg" height="200px" width="200px">
-      </div>
-      <div class="card">
-        <h3>Experiment</h3>
-        <p>Application form<a href="experiment%2012.html"><button>Click</button></a><br>
-        Image clickable<a href="experiment%208.html"><button>Click</button></a></p>
-      </div>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Email: atharvfarakate123@gmail.com</p>
+            <p>Phone No- 2200930000  </p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/atharvfarakate" target="_blank">linkedin.com/in/atharvfarakate</a></p>
+        </section>
     </div>
-  </section>
-
 </body>
 </html>
-
-
